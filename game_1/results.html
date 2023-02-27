@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "setValores()">
+    <header>
+        <h1>Fim de Jogo</h1>
+    </header>
+    <main id = "main_results">
+        <span id = "r_diff">|</span>
+        <p id = "r_modo">_</p>
+        <p>Você passou por <span id = "r_total">0 </span> questões!</p>
+        <p>Você respondeu corretamente <span id = "r_acertos">0</span> questões!</p>
+        <!--p>Erros: <span id = "r_erros">0</span></p-->
+        <span id = "p_final">Pontuação Final: <br/><span id = "r_score">0</span></p>
+        <input type="button" id = "btn_repetir" onclick="location.href = 'subt_page.html'" value = "Jogar Novamente">
+    </main>
+    
+    <script src="results.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♦♣♠♥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "iniciar()">
+    <div id = "panel"></div>
+    <main>
+        
+        <div id = "header">
+            
+            <div id = "acertos" class = "head">
+                Pontos <br/>
+                <span id = "score">0</span>
+                <span id = "pontosGanhos"></span>    
+            </div>
+
+            <div id = "nivel" class = "head">
+                <div id = "lifebar"></div>
+                <span>Nível:</span> <span id = "dificuldade"></span>        
+            </div>
+
+        </div>
+        
+        <form action = "">
+            
+            <div id = "valores">
+                <input type = "text" id = "txt_v1" class = "txt_valores" disabled>
+                <span>X</span>
+                <input type = "text" id = "txt_v2" class = "txt_valores" disabled>
+            </div>
+
+            <input type = "number" id = "txt_resp" autofocus onfocus = "this.value = ''" placeholder = "= ?">
+            
+            <div id = "timebar">
+                <div id = "liquid"></div>
+            </div>
+            <input type = "button" onclick = "verificar()" id = "btn_verificar" value = "OK!">
+
+        </form>
+
+        <footer>
+            
+            <span id = "foot">Informe o resultado da operação acima e pressione o botão.</span>
+            <br>
+            <input type = "button" onclick = "endGame()" id = "btn_encerrar" value = "Finalizar">
+        </footer>
+    </main>
+    <script src="mult_script.js"></script>
+</body>
+</html>
